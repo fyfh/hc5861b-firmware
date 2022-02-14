@@ -52,7 +52,7 @@ jobs:
       
     - name: Enable SSR Plus
       run: cd openwrt && echo 'src-git helloworld https://github.com/fw876/helloworld' >> feeds.conf.default
-            run: git clone $REPO_URL openwrt
+      
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
